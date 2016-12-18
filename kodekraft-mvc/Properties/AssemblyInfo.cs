@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("kodekraft")]
+[assembly: AssemblyTitle("kodekraft_mvc")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("kodekraft")]
+[assembly: AssemblyProduct("kodekraft_mvc")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d1d5e323-1a99-46fe-84c0-0aa147a6e208")]
+[assembly: Guid("6ee37cbe-c391-4efa-8a2d-176775b56add")]
 
 // Version information for an assembly consists of the following four values:
 //

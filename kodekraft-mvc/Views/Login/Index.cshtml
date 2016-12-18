@@ -1,0 +1,63 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Login";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    @{
+        string AppName = "Kode Kraft";
+    }
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - @AppName</title>
+    <link href="~/Images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/Content/Login.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+</head>
+
+<body style="color: #53e3a6;">
+    <div class="wrapper">
+        <div class="container">
+            <img src="~/Images/giet.png">
+            <br><br>
+            <h1 id="msg">Welcome to Kode Kraft</h1>
+            <h3 style="color:whitesmoke;" id="note">Please Login Below to Compete in Kode Kraft</h3>
+            <form class="form">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button type="submit" id="login-button">Login</button>
+            </form>
+            <br />
+            <footer>
+                <p style="color:whitesmoke;">&copy; @DateTime.Now.Year - Godavari Institute of Engineering and Technology</p>
+            </footer>
+        </div>
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script>
+        $("#login-button").click(function (event) {
+            event.preventDefault();
+            $('#note').fadeOut(300);
+            $('form').fadeOut(500);
+            $('.wrapper').addClass('form-success');
+            $('#msg').text('Please wait while we Log you in.');
+            $('footer').fadeOut(500);
+        });
+    </script>
+</body>
+
+</html>
